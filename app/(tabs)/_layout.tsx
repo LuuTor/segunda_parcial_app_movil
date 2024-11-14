@@ -47,6 +47,16 @@ export default function TabLayout() {
                 tabBarActiveTintColor: Colors['light'].tint,
                 headerShown: false, // Oculta la cabecera
             }}>
+                <Tabs.Screen
+                name="tareas" // Archivo contact.tsx dentro de (tabs)
+                options={{
+                    title: 'Tareas',
+                    tabBarIcon: ({ color, focused }) => (
+                        <TabBarIcon name={focused ? 'checkbox' : 'checkbox-outline'} color={color} />
+                    ),
+                }}
+            />
+
             {/* Pestaña de Inicio */}
             <Tabs.Screen
                 name="index" // Archivo index.tsx dentro de (tabs)
