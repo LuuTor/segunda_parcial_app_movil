@@ -71,7 +71,7 @@ const ViewConsultation: React.FC = () => {
         { title: 'Merienda', opciones: menuDiario.merienda.opciones, descripcion: menuDiario.merienda.descripcion },
         { title: 'Cena', opciones: menuDiario.cena.opciones, descripcion: menuDiario.cena.descripcion },
     ];
-//Si
+
     const renderCard = ({ item }: { item: { title: string, opciones: string[], descripcion: string } }) => (
         <Card style={commonStyles.card}>
             <Text category="h6">{item.title}</Text>

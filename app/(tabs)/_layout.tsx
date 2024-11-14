@@ -47,6 +47,7 @@ export default function TabLayout() {
                 tabBarActiveTintColor: Colors['light'].tint,
                 headerShown: false, // Oculta la cabecera
             }}>
+
                 <Tabs.Screen
                 name="tareas" // Archivo contact.tsx dentro de (tabs)
                 options={{
